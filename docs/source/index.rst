@@ -1,7 +1,19 @@
-Welcome to WitcherLib's documentation!
-======================================
+WitcherLib: Documentation
+=========================
 
-WitcherLib is a fictional Python library inspired by *The Witcher* universe. It allows you to:
+Release |release| (:doc:`installation`).
+
+.. image:: https://img.shields.io/github/license/22skowron/WitcherLib.svg
+   :target: https://github.com/22skowron/WitcherLib/blob/main/LICENSE
+   :alt: License Badge
+
+.. image:: https://img.shields.io/badge/docs-latest-blue
+   :target: https://22skowron.github.io/WitcherLib/
+   :alt: Documentation Badge
+
+-------
+
+**WitcherLib** is a fictional Python library inspired by *The Witcher* universe. It allows you to:
 
 - Summon Witchers
 - Brew potions
