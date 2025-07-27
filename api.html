@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>API Reference &#8212; WitcherLib 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=f6a572b4" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changelog" href="changelog.html" />
+    <link rel="prev" title="The Witcher Universe" href="witcher_universe.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">WitcherLib</a></h1>
+
+
+
+<p class="blurb">Fictional Python library inspired by The Witcher universe.</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=22skowron&repo=WitcherLib&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_usage.html">Advanced Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="witcher_universe.html">The Witcher Universe</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.summon_witcher"><code class="docutils literal notranslate"><span class="pre">summon_witcher()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.brew_potion"><code class="docutils literal notranslate"><span class="pre">brew_potion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.hunt_monster"><code class="docutils literal notranslate"><span class="pre">hunt_monster()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.get_random_witcher"><code class="docutils literal notranslate"><span class="pre">get_random_witcher()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.PotionBrewingError"><code class="docutils literal notranslate"><span class="pre">PotionBrewingError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#witcher.MonsterNotFoundError"><code class="docutils literal notranslate"><span class="pre">MonsterNotFoundError</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="donate.html">Donate</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="witcher_universe.html" title="previous chapter">The Witcher Universe</a></li>
+      <li>Next: <a href="changelog.html" title="next chapter">Changelog</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-witcher">
+<span id="api-reference"></span><h1>API Reference<a class="headerlink" href="#module-witcher" title="Link to this heading">¶</a></h1>
+<p>This part of the documentation covers all the interfaces of WitcherLib.</p>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="witcher.summon_witcher">
+<span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">summon_witcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#witcher.summon_witcher" title="Link to this definition">¶</a></dt>
+<dd><p>Summon a Witcher by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – The name of the Witcher to summon.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A confirmation message.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">summon_witcher</span><span class="p">(</span><span class="s2">&quot;Geralt&quot;</span><span class="p">)</span>
+<span class="go">&#39;Witcher Geralt has been summoned!&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="witcher.brew_potion">
+<span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">brew_potion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">potion_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ingredients</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#witcher.brew_potion" title="Link to this definition">¶</a></dt>
+<dd><p>Brew a potion using given ingredients.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>potion_name</strong> (<em>str</em>) – Name of the potion to brew.</p></li>
+<li><p><strong>ingredients</strong> (<em>list</em><em> of </em><em>str</em>) – List of ingredients to use.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Success message with potion name.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#witcher.PotionBrewingError" title="witcher.PotionBrewingError"><strong>PotionBrewingError</strong></a> – If required ingredients are missing.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">brew_potion</span><span class="p">(</span><span class="s2">&quot;Swallow&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;celandine&quot;</span><span class="p">,</span> <span class="s2">&quot;drowner brain&quot;</span><span class="p">])</span>
+<span class="go">&#39;Potion Swallow brewed successfully!&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="witcher.hunt_monster">
+<span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">hunt_monster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monster</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#witcher.hunt_monster" title="Link to this definition">¶</a></dt>
+<dd><p>Hunt a monster by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>monster</strong> (<em>str</em>) – Name of the monster.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Result of the hunt.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#witcher.MonsterNotFoundError" title="witcher.MonsterNotFoundError"><strong>MonsterNotFoundError</strong></a> – If the monster is unknown.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hunt_monster</span><span class="p">(</span><span class="s2">&quot;griffin&quot;</span><span class="p">)</span>
+<span class="go">&#39;The griffin has been hunted successfully!&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="witcher.get_random_witcher">
+<span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">get_random_witcher</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#witcher.get_random_witcher" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve a random Witcher from the School of the Wolf.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Name of the Witcher.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_random_witcher</span><span class="p">()</span>
+<span class="go">&#39;Lambert&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="witcher.PotionBrewingError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">PotionBrewingError</span></span><a class="headerlink" href="#witcher.PotionBrewingError" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when a potion cannot be brewed due to missing ingredients.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="witcher.MonsterNotFoundError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">witcher.</span></span><span class="sig-name descname"><span class="pre">MonsterNotFoundError</span></span><a class="headerlink" href="#witcher.MonsterNotFoundError" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when a requested monster is not found in the bestiary.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &#169;2025, 22skowron.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
