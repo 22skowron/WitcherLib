@@ -14,8 +14,12 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    installation
+   quickstart
+   advanced_usage
    witcher_universe
    api
+   changelog
+   donate

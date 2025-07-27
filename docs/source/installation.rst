@@ -1,16 +1,11 @@
-Installation and Usage
-======================
-
-.. _installation:
-
 Installation
-------------
+============
 
-To use WitcherLib, first install it using pip (once it's published):
+To use WitcherLib, first install it using pip (from TestPyPI):
 
 .. code-block:: console
 
-   (.venv) $ pip install witcherlib
+   (.venv) $ pip install --index-url https://test.pypi.org/simple/ --no-deps witcherLib
 
 You can also install it locally from source:
 
@@ -18,44 +13,4 @@ You can also install it locally from source:
 
    (.venv) $ pip install -e .
 
-Usage
------
-
-After installation, you can import the library and use its functions.
-
-Summoning Witchers
-------------------
-
-Use the :py:func:`witcher.summon_witcher` function to summon a Witcher by name:
-
-.. autofunction:: witcher.summon_witcher
-
-Brewing Potions
----------------
-
-Use :py:func:`witcher.brew_potion` to brew potions like Swallow or Thunderbolt.
-This function checks for the required ingredients:
-
-.. autofunction:: witcher.brew_potion
-
-If required ingredients are missing, it raises:
-
-.. autoexception:: witcher.PotionBrewingError
-
-Monster Hunting
----------------
-
-Use :py:func:`witcher.hunt_monster` to simulate a monster hunt:
-
-.. autofunction:: witcher.hunt_monster
-
-If the monster is unknown:
-
-.. autoexception:: witcher.MonsterNotFoundError
-
-Random Witcher
---------------
-
-To summon a random Witcher from the School of the Wolf:
-
-.. autofunction:: witcher.get_random_witcher
+Once installed, you can follow the :doc:`quickstart` guide to learn the basics of using WitcherLib in your own code.

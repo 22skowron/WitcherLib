@@ -1,9 +1,22 @@
 API Reference
 =============
 
-.. automodule:: witcher
-   :members:
-   :undoc-members:
+.. module:: witcher
+
+This part of the documentation covers all the interfaces of WitcherLib.
+
+Functions
+---------
+
+.. autofunction:: summon_witcher
+.. autofunction:: brew_potion
+.. autofunction:: hunt_monster
+.. autofunction:: get_random_witcher
+
+Exceptions
+----------
+
+.. autoexception:: PotionBrewingError
    :show-inheritance:
-.. :special-members: __init__
-   :exclude-members: __weakref__
+.. autoexception:: MonsterNotFoundError
+   :show-inheritance:
