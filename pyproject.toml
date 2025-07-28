@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "witcherLib"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="22skowron", email="author@example.com" },
 ]
@@ -19,5 +19,7 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/22skowron/WitcherLib"
+Documentation = "https://22skowron.github.io/WitcherLib"
+Repository = "https://github.com/22skowron/WitcherLib"
+Issues = "https://github.com/22skowron/WitcherLib/issues"
